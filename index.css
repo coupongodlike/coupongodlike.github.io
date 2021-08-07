@@ -1,0 +1,123 @@
+@import url("/styles.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+#ifr {
+  width: 100%;
+  height: 80%;
+}
+
+.full-height-grow {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.25em;
+  color: inherit;
+  text-decoration: none;
+}
+
+.brand-logo-name {
+  margin-left: 1rem;
+}
+
+.main-nav ul,
+.footer-nav ul {
+  display: flex;
+  margin: 0;
+  padding: 1px;
+  list-style: none;
+  border-bottom: 1px solid white;
+}
+
+.main-nav a,
+.footer-nav a {
+  color: inherit;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.main-nav a:hover,
+.footer-nav a:hover {
+  color: #adadad;
+}
+
+.main-header,
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header {
+  height: 10%;
+}
+
+.main-footer {
+  border-top: 1px solid palegoldenrod;
+  border-bottom: 1px solid palegoldenrod;
+  font-size: 0.6em;
+  height: 10%;
+  background-color: black;
+  font-weight: bold;
+}
+
+.social-link img {
+  width: 1em;
+  margin-right: 0.25rem;
+}
+
+.main-footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
+.home-page-circle-1 {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  background-color: darkred;
+  bottom: 5vw;
+  left: 4vw;
+  z-index: -1;
+}
+
+.home-page-circle-2 {
+  position: absolute;
+  width: 25vw;
+  height: 25vw;
+  border-radius: 50%;
+  background-color: darkred;
+  top: 15vh;
+  left: 35vw;
+  z-index: -1;
+}
+
+.home-page-circle-3 {
+  position: absolute;
+  overflow: hidden;
+  width: 45vw;
+  height: 45vw;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.home-page-circle-3::before {
+  content: "";
+  transform: translate(10%, 40%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: white;
+}
